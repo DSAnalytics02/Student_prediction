@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <title>"Student Prediction"</title>
+        <h1>Student Placement Prediction</h1>
+    </head>
+    <body>
+        <div class="input">
+            <form method="POST" action="Predict">
+                <label for="ssc_p">Secondary School Percentage :- </label><input type="text" name="ssc_p" value="33.5"></br></br>
+                <label for="hsc_p">Higher Secondary School Percentage :- </label><input type="text" name="hsc_p" value="33.5"></br></br>
+                <label for="degree_p">Graduation Percentage :- </label><input type="text" name="degree_p" value="33.5"></br></br>
+                <label for="etest_p">Entrance test Percentage :- </label><input type="text" name="etest_p" value="33.5"></br></br>
+                <label for="mba_p">MBA Percentage :- </label><input type="text" name="mba_p" value="33.5"></br></br>
+                <label for="gender_M">Gender:-</label><select id="gender_M" name="gender_M"><option value="1">Male</option><option value="0">Female</option></select></br></br>
+                <label for="ssc_b_Others">10th Board :- </label><select id="ssc_b_Others" name="ssc_b_Others"><option value="1">Others</option><option value="0">Central</option></select></br></br>
+                <label for="hsc_b_Others">12th Board :-</label><select id="hsc_b_Others" name="hsc_b_Others"><option value="1">Others</option><option value="0">Central</option></select></br></br>
+                <label for="hsc_s_Others">12th Stream :-</label><select id="hsc_s_Others" name="hsc_s_Others"><option value="1">Others</option><option value="0">Commerce</option></select></br></br>
+                <label for="degree_t_Others">Graduation Stream :-</label><select id="degree_t_Others" name="degree_t_Others"><option value="1">Others</option><option value="0">Commerce</option></select></br></br>
+                <label for="workex_Yes">Work Experience :-</label><select id="workex_Yes" name="workex_Yes"><option value="1">Yes</option><option value="0">No</option></select></br></br>
+                <Label for="specialisation_Mkt&HR">MBA Specialization :- </Label><select id="specialisation_Mkt&HR" name="specialisation_Mkt&HR"><option value="0">Marketing & HR</option><option value="1">Marketing & Finance</option></select>
+                 </br>
+                </br>   
+                </br><input type="submit" name="Submit">
+
+
+
+
+            </form>
+            
+
+            <h2>{{prediction_text}}</h2>
+
+
+        </div>
+        
+    </body>
+</html>

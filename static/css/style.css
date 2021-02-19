@@ -1,0 +1,23 @@
+body{
+    background-color:black;
+}
+
+
+.input{
+    align-content: center;
+}
+
+h1{
+    text-align: center;
+    color: blanchedalmond;
+}
+
+form{
+    text-align: center;
+    color: azure;
+}
+
+h2{
+    color: blanchedalmond;
+    text-align: center;
+}
